@@ -32,25 +32,19 @@
       
       <div class="form-container">
         <div class="form">
-          <div class="form-btn1">
-            <input type="input" class="b1" placeholder="Temperatura" id="temp" />
-          </div>
+            <input id="temp" type= "text" class="b1" placeholder="Temperatura" name = "temp"/>
           <div>
             <div class="form-btn">
-              <button id="b2" onclick="myFunction()" class="b2">Celsius</button>
+              <button id="b2"  class="b2">Celsius</button>
             </div>
           </div>
           <div class="form-btn">
             <button id="b3" class="b2">Fahrenheit</button>
           </div>
         </div>
-      </div>
-  
-      <script>
-        function myFunction() {
-          var numero = document.getElementById('temp').innerHTML;
-          document.getElementById('b2').innerHTML = numero;
-        }
-      </script>
+        <p  id = "resultado" class="resultado"></p>
+            
+    </div>
+      <script src="./index.js"></script>
   </body>
 </html>
