@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+
+    <title> Imersão Dev Alura - Aula 01 </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+</head>
+<body>
+    <div class="container">
+      <h1 class="page-title">
+        Conversor de Temperatura
+      </h1>
+      <p class="page-subtitle">
+        Convertemos a temperatura graus Celsius e Fahrenheit
+      </p>
+      <a><img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""></a>
+      <p><img src="https://ddragon.leagueoflegends.com/cdn/8.24.1/img/profileicon/1587.png" class="image-nami" alt=""></p>
+      <a href="https://github.com/evelyt" target="_blank">
+        <img src="https://img.shields.io/badge/-evely tereza-000000?style=for-the-badge&logo=github&logoColor=white" alt="" class="perfil-logo">
+      </a>
+      
+      <div class="form-container">
+        <div class="form">
+          <div class="form-btn1">
+            <input type="input" class="b1" placeholder="Temperatura" id="temp" />
+          </div>
+          <div>
+            <div class="form-btn">
+              <button id="b2" onclick="myFunction()" class="b2">Celsius</button>
+            </div>
+          </div>
+          <div class="form-btn">
+            <button id="b3" class="b2">Fahrenheit</button>
+          </div>
+        </div>
+      </div>
+  
+      <script>
+        function myFunction() {
+          var numero = document.getElementById('temp').innerHTML;
+          document.getElementById('b2').innerHTML = numero;
+        }
+      </script>
+  </body>
+</html>
